@@ -3,6 +3,7 @@
 # Chat Buran
 
 基于LangChain的纯本地AI聊天Agent类项目
+
 练手作
 
 <!-- PROJECT SHIELDS -->
@@ -62,11 +63,17 @@
 
 ###### 开发前的配置要求
 
-有时间写
+本项目自身并不需要很高级的配置，但是如果需要在本地运行LLM模型的话，则需要一定的CPU/GPU配置。本地模型可以用任何支持OpenAI的api的模型（本人使用的是KoboldCpp加载InternLM2的gguf量化模型）。
+
+如果配置不足（而且有经费），可以使用OpenAI的api。本项目对接模型的接口和OpenAI是完全兼容的，只需要修改llm.py中的openai_api_base为官方源即可。
 
 ###### **安装步骤**
 
-有时间写
+1. 克隆仓库
+2. （可选）创建虚拟环境
+3. pip install -r requirements.txt
+4. 启动launch.bat，同时保证本地模型的api运行在[http://localhost:5001/v1](http://localhost:5001/v1)上
+5. 打开生成的gradio链接
 
 ### 文件目录说明
 
@@ -152,7 +159,7 @@ qq:952988294
 [stars-shield]: https://img.shields.io/github/stars/JasdewStarfield/ChatBuran.svg?style=flat-square
 [stars-url]: https://github.com/JasdewStarfield/ChatBuran/stargazers
 [issues-shield]: https://img.shields.io/github/issues/JasdewStarfield/ChatBuran.svg?style=flat-square
-[issues-url]: https://img.shields.io/github/issues/JasdewStarfield/ChatBuran.svg
+[issues-url]: https://github.com/JasdewStarfield/ChatBuran/issues
 [license-shield]: https://img.shields.io/github/license/JasdewStarfield/ChatBuran.svg?style=flat-square
 [license-url]: https://github.com/JasdewStarfield/ChatBuran/master/LICENSE.txt
 
