@@ -1,6 +1,7 @@
 import gradio as gr
 from llm import get, start_message
 from translator import mem_to_gr
+from audio import gen_audio
 
 
 async def prompt(history, name):
@@ -14,6 +15,8 @@ async def prompt(history, name):
     async for i in result:
         history[-1][1] = i
         yield history
+    gen_audio("Buran3", history[-1][1], "default", 40)
+
 
 
 def user(user_message, name):

@@ -1,1 +1,6 @@
 main/models/llm/*
+/Buran.drawio
+/Buran.drawio.png
+/main/audiotest.py
+main/history/history.pickle
+main/history/history.txt
