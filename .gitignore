@@ -4,3 +4,4 @@ main/models/llm/*
 /main/audiotest.py
 main/history/history.pickle
 main/history/history.txt
+main/models/text2vec/text2vec-base-chinese/
